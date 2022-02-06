@@ -19,14 +19,21 @@
     
     </section>
     
-    <section v-if="tela === 'jogo'" id="jogo">jogo</section>
+    <section v-if="tela === 'jogo'" id="jogo">
+
+    <Jogo
+    :erros="erros"
+    />
+    
+    </section>
 
   </div>
 </template>
 
 <script>
 import './css/global.css';
-import Formulario from './components/Formulario.vue'
+import Formulario from './components/Formulario.vue';
+import Jogo from './components/Jogo.vue'
 
 export default {
   name: 'App',
@@ -35,11 +42,13 @@ export default {
       tela:   'inicio',
       etapa:  'palavra',
       palavra:'',
-      dica:   ''
+      dica:   '',
+      erros: 0
     }
   },
   components: {
-    Formulario
+    Formulario,
+    Jogo
   },
   methods:{
     setPalavra: function(palavra){
