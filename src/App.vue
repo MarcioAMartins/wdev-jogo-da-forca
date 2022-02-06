@@ -3,7 +3,17 @@
     <h1> Jogo da Forca WDEV</h1>
 
     <section v-if="tela === 'inicio'" id="inicio">
-      <Formulario/>
+      
+      <Formulario
+      title="Defina a palavra"
+      button = "Próximo"
+      />
+      
+      <Formulario 
+      title="Defina a dica"
+      button="Iniciar jogo"
+      />
+    
     </section>
     
     <section v-if="tela === 'jogo'" id="jogo">jogo</section>

@@ -1,14 +1,18 @@
 <template>
     <div class="formulario">
-        <div class="formulatio-title">Defina a palavra</div>
+        <div class="formulatio-title">{{title}}</div>
         <input type="text" class="formulario-input">
-        <button>Próximo</button>
+        <button>{{button}}</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Formulario'
+    name: 'Formulario',
+    props:{
+        title: String,
+        button: String
+    }
 }
 </script>
 
@@ -16,7 +20,7 @@ export default {
     .formulario{
         display: flex;
         flex-direction: column;
-        align-content: center;
+        align-items: center;
         text-align: center;
         justify-content: center;
         margin-top: 20px;
@@ -27,6 +31,7 @@ export default {
         border: 0;
         border-radius: 5px;
         margin: 10px 0px;
+        text-align: center;
         color: var(--color-text-dark);
         font-size: 16px;
     }

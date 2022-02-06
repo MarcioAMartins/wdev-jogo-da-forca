@@ -26,7 +26,7 @@
       color: var(--color-text-title);
   }
   button{
-      padding: 5px 10px;
+      padding: 10px 15px;
       background-color: var(--color-background-button);
       border: 0;
       border-radius: 5px;
