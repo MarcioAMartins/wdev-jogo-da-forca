@@ -3,7 +3,7 @@
     <h1> Jogo da Forca WDEV</h1>
 
     <section v-if="tela === 'inicio'" id="inicio">
-      inicio
+      <Formulario/>
     </section>
     
     <section v-if="tela === 'jogo'" id="jogo">jogo</section>
@@ -13,6 +13,7 @@
 
 <script>
 import './css/global.css';
+import Formulario from './components/Formulario.vue'
 
 export default {
   name: 'App',
@@ -22,7 +23,7 @@ export default {
     }
   },
   components: {
-    
+    Formulario
   }
 }
 </script>
