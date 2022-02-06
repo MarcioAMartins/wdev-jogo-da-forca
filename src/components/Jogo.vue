@@ -9,6 +9,7 @@
         :palavra="palavra"
         :dica="dica"
         :verificarLetra="verificarLetra"
+        :etapa="etapa"
         />
 
     </div>
@@ -29,7 +30,8 @@ export default {
        erros:Number,
        palavra:String,
        dica:String,
-       verificarLetra: Function
+       verificarLetra: Function,
+       etapa: String
     },
     
     data(){

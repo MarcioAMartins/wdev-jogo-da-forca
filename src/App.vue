@@ -26,6 +26,7 @@
     :palavra="palavra"
     :dica="dica"
     :verificarLetra="verificarLetra"
+    :etapa="etapa"
     />
     
     </section>
@@ -46,7 +47,8 @@ export default {
       etapa:  'palavra',
       palavra:'',
       dica:   '',
-      erros: 0
+      erros: 0,
+      letras:[]
     }
   },
   components: {
@@ -64,7 +66,7 @@ export default {
       this.etapa = 'jogo';
     },
     verificarLetra: function(letra){
-      return letra == 'a';
+      return this.letras.find(item => item.toLowerCase === letra.toLowerCase);
     }
   }
 }

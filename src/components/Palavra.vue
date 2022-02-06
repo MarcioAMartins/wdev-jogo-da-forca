@@ -3,7 +3,7 @@
         
         <div class="palavra-letras">
             <div class="palavra-letra" v-for="(letra,key) in palavra" :key="key">
-            {{verificarLetra(letra) ? letra : ''}}
+            {{verificarLetra(letra) || etapa === 'enforcado' ? letra : ''}}
             </div>
         </div>
 
@@ -25,7 +25,8 @@ export default {
     props:{
        palavra: String,
        dica: String,
-       verificarLetra: Function
+       verificarLetra: Function,
+       etapa: String
     },
     
     data(){
