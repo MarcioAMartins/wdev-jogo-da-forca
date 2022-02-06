@@ -5,7 +5,11 @@
         :erros="erros"
         />
 
-        <Palavra />
+        <Palavra
+        :palavra="palavra"
+        :dica="dica"
+        :verificarLetra="verificarLetra"
+        />
 
     </div>
 </template>
@@ -22,7 +26,10 @@ export default {
     },
 
     props:{
-       erros:Number
+       erros:Number,
+       palavra:String,
+       dica:String,
+       verificarLetra: Function
     },
     
     data(){
