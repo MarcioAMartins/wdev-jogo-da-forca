@@ -12,9 +12,14 @@
         :etapa="etapa"
         />
         <Teclado
+        v-if="etapa === 'jogo'"
         :letras="letras"        
         :verificarLetra="verificarLetra"
         :jogar="jogar"
+        />
+
+        <Final 
+        
         />
 
     </div>

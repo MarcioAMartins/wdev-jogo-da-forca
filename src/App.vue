@@ -72,8 +72,32 @@ export default {
     },
     jogar: function(letra){
       //Adiciona letra jogada 
-      this.letras.push(letra)
-    }
+      this.letras.push(letra);
+
+      //Validar erro
+      this.verificarErros(letra); 
+    },
+
+    verificarErros: function(letra){
+      //Acerto
+      if(this.palavra.toLowerCase().indexOf(letra.toLowerCase()) >= 0){
+        return this.verificarAcertos();
+      }
+
+      //Erros
+      this.erros++;
+
+      //Enforcados
+      if(this.erros === 6){
+        this.etapa = 'enforcado'
+      }
+    },
+    verificarAcertos: function(){
+      let letrasUnicas = [...new Set(this.palavra.split(''))];
+      if(letrasUnicas.length === (this.letras.length - this.erros)){
+        this.etapa = 'ganhador';
+      }
+    },
   }
 }
 </script>
