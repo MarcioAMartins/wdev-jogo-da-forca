@@ -20,10 +20,6 @@ export default {
             
         }
     },
-
-    methods:{
-        
-    }
 }
 </script>
 

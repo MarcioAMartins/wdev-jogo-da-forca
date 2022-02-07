@@ -11,6 +11,10 @@
         :verificarLetra="verificarLetra"
         :etapa="etapa"
         />
+        <Teclado
+        :letras="letras"        
+        :verificarLetra="verificarLetra"
+        />
 
     </div>
 </template>
@@ -18,12 +22,15 @@
 <script>
 import Forca from './Forca';
 import Palavra from './Palavra';
+import Teclado from './Teclado';
+
 
 export default {
     name: 'Jogo',
     components:{
         Forca,
-        Palavra
+        Palavra,
+        Teclado
     },
 
     props:{
@@ -31,7 +38,8 @@ export default {
        palavra:String,
        dica:String,
        verificarLetra: Function,
-       etapa: String
+       etapa: String,
+       letras:Array
     },
     
     data(){

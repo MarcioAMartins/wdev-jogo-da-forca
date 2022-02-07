@@ -27,6 +27,7 @@
     :dica="dica"
     :verificarLetra="verificarLetra"
     :etapa="etapa"
+    :letras="letras"
     />
     
     </section>

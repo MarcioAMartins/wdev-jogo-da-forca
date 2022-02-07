@@ -18,9 +18,6 @@
 
 export default {
     name: 'Palavra',
-    components:{
-        
-    },
 
     props:{
        palavra: String,
