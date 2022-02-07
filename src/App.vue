@@ -28,6 +28,7 @@
     :verificarLetra="verificarLetra"
     :etapa="etapa"
     :letras="letras"
+    :jogar="jogar"
     />
     
     </section>
@@ -67,7 +68,11 @@ export default {
       this.etapa = 'jogo';
     },
     verificarLetra: function(letra){
-      return this.letras.find(item => item.toLowerCase === letra.toLowerCase);
+      return this.letras.find(item => item.toLowerCase() === letra.toLowerCase());
+    },
+    jogar: function(letra){
+      //Adiciona letra jogada 
+      this.letras.push(letra)
     }
   }
 }
