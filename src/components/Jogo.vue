@@ -18,8 +18,11 @@
         :jogar="jogar"
         />
 
-        <Final 
-        
+        <Final
+            v-if="etapa != 'jogo'" 
+            :etapa="etapa"
+            :texto="etapa === 'ganhador' ? 'Parabéns :)' : 'Tadinho :('"
+            :jogarNovamente="jogarNovamente"
         />
 
     </div>
@@ -29,6 +32,8 @@
 import Forca from './Forca';
 import Palavra from './Palavra';
 import Teclado from './Teclado';
+import Final from './Final';
+
 
 
 export default {
@@ -36,7 +41,8 @@ export default {
     components:{
         Forca,
         Palavra,
-        Teclado
+        Teclado,
+        Final
     },
 
     props:{
@@ -46,7 +52,8 @@ export default {
        etapa: String,
        letras:Array,
        verificarLetra: Function,
-        jogar: Function
+       jogar: Function,
+       jogarNovamente: Function
 
     },
     

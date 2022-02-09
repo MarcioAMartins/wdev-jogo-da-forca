@@ -3,7 +3,7 @@
         
         <button
         class="teclado-botao"
-        v-for="(letra, key) in 'abcdefghijklmnopqrstuvwxyz'"
+        v-for="(letra, key) in 'abcdefghijklmnopqrstuvwxyzá'"
         :key="key"
         :disable="verificarLetra(letra)"
         v-on:click="jogar(letra)"
