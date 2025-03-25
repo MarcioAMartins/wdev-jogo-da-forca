@@ -1,15 +1,15 @@
 # wdev-jogo-da-forca com Vue.js
 
-> [👉 Visite a página do projeto 👈](sem link)
+> [ Visite a página do projeto ](sem link)
 
 <img src="https://user-images.githubusercontent.com/44410208/127399567-ee45cb10-9296-4f1d-bb30-da736c748972.png" alt="imagem vue e vuetify" height="150" />
 
 ## ScreenShots
 ### Mobile / Desktop
 <div>
-<img src="https://user-images.githubusercontent.com/41830609/158039805-a3412965-e5ed-4bc7-9e14-1a2d82bd5019.png" alt="imagem vue e vuetify" width="220" height="450" />
-<img src="https://user-images.githubusercontent.com/41830609/158039806-9ca8cb1d-8015-4072-bf8a-34b718a1ca5f.png" alt="imagem vue e vuetify" width="220" height="450" />
-<img src="https://user-images.githubusercontent.com/41830609/158039807-ace00e1f-ec73-4b55-a800-15e3cb9906e5.png" alt="imagem vue e vuetify" width="220" height="450" />
+<img src="https://github.com/MarcioAMartins/wdev-jogo-da-forca/blob/main/src/assets/Tela%20Entrada.jpg" alt="imagem vue e vuetify" width="220" height="450" /> ent
+<img src="https://github.com/MarcioAMartins/wdev-jogo-da-forca/blob/main/src/assets/Tela%20de%20Jogo.jpg" alt="imagem vue e vuetify" width="220" height="450" />
+<img src="https://github.com/MarcioAMartins/wdev-jogo-da-forca/blob/main/src/assets/Tela%20de%20Dica.jpg" alt="imagem vue e vuetify" width="220" height="450" />
 <img src="https://user-images.githubusercontent.com/41830609/158039809-543ccbe8-67c7-4ee1-acca-4c44e18643f6.png" alt="imagem vue e vuetify" width="220" height="450" />
 <img src="https://user-images.githubusercontent.com/41830609/158039808-50d187c7-1a8f-40c4-9443-fa349480dc71.png" alt="imagem vue e vuetify" width="220" height="450" />
 <img src="https://user-images.githubusercontent.com/41830609/158039810-0ca0923a-c7e9-4dd9-b0fc-46a9ecf4962b.png" alt="imagem vue e vuetify" width="220" height="450" />
@@ -37,5 +37,5 @@ Acompanhe o console, mas provavelmente o projeto estará rodando em http://local
 
 Se quiser criar esse projeto do ZERO, você pode acompanhar essa video no youtube onde fazemos juntos:
 
-[![Watch the video](https://user-images.githubusercontent.com/44410208/127400712-2850ba05-ddaa-42ba-ab00-2ac625b168ec.png)](https://www.youtube.com/watch?v=M80y-fPHmWM&t=748s)
+[![Watch the video](https://github.com/MarcioAMartins/wdev-jogo-da-forca/blob/main/src/assets/Video%20youtube.jpg)](https://www.youtube.com/watch?v=M80y-fPHmWM&t=748s)
 
